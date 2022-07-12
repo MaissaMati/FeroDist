@@ -1,0 +1,142 @@
+$primary:#8E0D18;
+$faded_primary:#f18d95;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+html,body{
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+//separateur horizental
+hr{
+    width: 65%;
+    height: 2px;
+    background-color: $primary;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+//les icons en blancs
+.fa{
+    color: white;
+}
+
+.icon-toggle-unselected{
+    color:$faded_primary;
+}
+
+//toggle icons between [commande-livraison] [chargement-déchargement]
+//list icons
+.icon-border{
+    @extend .bg-primary;
+    @extend .rounded-circle;
+    color: white;
+    padding: 4px;
+    align-content: center;
+    height: fit-content;
+}
+.not-selected-icon{
+    color: $primary;
+    padding: 2px;
+}
+
+img.border{
+    @extend .border-primary;
+    width: 70px;
+    border-width: 5px;
+}
+
+img.border-list{
+    @extend .border-primary;
+    width: 13vw;
+    border-width: 5px;
+}
+
+//text containers
+.text-border{
+    @extend .text-center;
+    @extend .bg-primary;
+    border-radius: 10px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+}
+//manage list overflow
+.list-container{
+    height: 73vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 4px 0px 10px 0px;
+  
+
+  /* mask fade distance, for use in mask calculations */
+  --mask-height: 25px;
+
+
+  /* Need to make sure container has bottom space,
+  otherwise content at the bottom is always faded out */
+  padding-bottom: var(--mask-height);
+  padding-top: var(--mask-height);
+
+
+  /* The CSS mask */
+
+  /* The content mask is a linear gradient from top to bottom */
+  --mask-image-content: linear-gradient(
+    to bottom,
+    transparent,
+    black var(--mask-height),
+    black calc(90% - var(--mask-height)),
+    transparent
+  );
+
+  /* Here we scale the content gradient to the width of the container 
+  minus the scrollbar width. The height is the full container height */
+  --mask-size-content: 100% 100%;
+
+  /* The scrollbar mask is a black pixel */
+  --mask-image-scrollbar: linear-gradient(black, black);
+
+  /* The width of our black pixel is the width of the scrollbar.
+  The height is the full container height */
+  --mask-size-scrollbar: 0 100%;
+
+  /* Apply the mask image and mask size variables */
+  mask-image: var(--mask-image-content), var(--mask-image-scrollbar);
+  mask-size: var(--mask-size-content), var(--mask-size-scrollbar);
+
+  /* Position the content gradient in the top left, and the 
+  scroll gradient in the top right */
+  mask-position: 0 0, 100% 0;
+
+  /* We don't repeat our mask images */
+  mask-repeat: no-repeat, no-repeat;
+}
+
+.list-container-commande{
+    @extend .list-container;
+    height: 48vh;
+}
+.list-container-livraison{
+    @extend .list-container;
+    height: 57vh;
+}
+
+//pour les liens
+.text-black{
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    margin-top: 11vh;
+}

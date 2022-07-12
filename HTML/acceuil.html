@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Acceuil</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../Custom sass/main.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+
+    <!-- Bootstrap CSS -->
+    <!--link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"-->
+  </head>
+  <body>
+    <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                                        NAVBAR   
+    /////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--------- THE TOP NAVBAR ----------->
+        <div class="navbar">
+        <label for="menu-control"> <i class="fas fa-bars fa-2x"></i> </label>
+        <h4 class="row justify-content-center w-100">Acceuil</h4>
+      </div>
+      <!--------- THE SIDE NAVBAR ----------->
+      <input type="checkbox" id="menu-control" class="menu-control">
+      <aside class="sidebar ">
+        <div class="sidebar__account row">
+          <div class="col-4">
+            <i class="fas fa-user-circle fa-5x bg-primary rounded-circle"></i>
+          </div>
+          <div class="col-5 text-center sidebar__account__userName"> Nom Utilisateur </div>
+          <div class="col-1"><label for="menu-control" ><i class="fas fa-times fa-2x"></i></label> </div>
+        </div>
+        <nav class="sidebar__menu pt-5 pl-3">
+          <b><a href="acceuil.html">Acceuil</a></b>
+          <hr>
+          <span>
+            <i class="fas fa-home col-2"></i>
+            <a href="">KPI</a>
+          </span>
+          <span>
+            <i class="fas fa-box-open col-2"></i>
+            <a href="">Produits</a>
+          </span>
+          <span>
+            <i class="fas fa-users col-2"></i>
+            <a href="clientTous.html">Clients</a>
+          </span>
+          <span>
+            <i class="fas fa-cubes col-2"></i>
+            <a href="">Stock</a>
+          </span>
+          <span>
+            <i class="fas fa-clipboard-list col-2"></i>
+            <a href="commandes.html">Commandes</a>
+          </span>
+          <span>
+            <i class="fas fa-clipboard-check col-2"></i>
+            <a href="livraisons.html">Livraisons</a>
+          </span>
+          <span>
+            <i class="fas fa-truck-loading col-2"></i>
+            <a href="chargements.html">Chargement/déchargement</a>
+          </span>
+          <span>
+            <i class="fas fa-dolly col-2"></i>
+            <a href="demandesCharge.html">Demandes de chargement</a>
+          </span>
+          <span>
+            <i class="fas fa-map-marked-alt col-2"></i>
+            <a href="tournées.html">Tournées</a>
+          </span>
+          <hr>
+          <span>
+            <i class="fas fa-cog col-2"></i>
+            <a href="">Paramètres</a>
+          </span>
+          <span>
+            <i class="fas fa-info-circle col-2"></i>
+            <a href="">Infos</a>
+          </span>
+          <span>
+            <i class="fas fa-sign-out-alt col-2"></i>
+            <a href="loginPage.html">Déconnexion</a>
+          </span>
+        </nav>
+      </aside>   
+
+     <!-- ////////////////////////////////////////////////////////////////////////////////////////
+                        THE BODY SECTION  
+    /////////////////////////////////////////////////////////////////////////////////////////////-->      
+    <section class="h-100 container-fluid">
+        <!-- row and column to center the grid in the page -->
+        <div class="row align-items-center align-self-center justify-content-center h-100">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+        <!-- -- -->
+            <div class="row form-group">
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/1_produits.png);">
+                        <i class="fa fa-box-open fa-3x"></i>
+                        <a href="#" class="stretched-link text-decoration-none">Produits</a>
+                    </div>
+                </div>    
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/2_client.png);">
+                        <i class="fa fa-users fa-3x"></i>
+                        <a href="clientTous.html" class="stretched-link text-decoration-none">Clients</a>
+                    </div>
+                </div>    
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/3_kpi.png);">
+                        <i class="fa fa-home fa-3x"></i>
+                        <a href="#" class="stretched-link text-decoration-none">KPI</a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="row form-group">
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/4_charge.png);">
+                        <i class="fa fa-truck-moving fa-3x fa-flip-horizontal"></i>
+                        <a href="chargements.html" class="stretched-link text-decoration-none">Chargement/ Déchargement</a>
+                    </div>
+                </div>    
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/5_demandeCharg.png);">
+                        <i class="fa fa-dolly fa-3x"></i>
+                        <a href="demandesCharge.html" class="stretched-link text-decoration-none">Demande de chargement</a>
+                    </div>
+                </div>    
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/6_stock.png);">
+                        <i class="fa fa-cubes fa-3x"></i>
+                        <a href="#" class="stretched-link text-decoration-none">Stock</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form-group">
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/7_bonLivraison.png);">
+                        <i class="fa fa-clipboard-check fa-3x"></i>
+                        <a href="livraisons.html" class="stretched-link text-decoration-none">Bon de livraison</a>
+                    </div>
+                </div>    
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/8_bonCommande.png);">
+                        <i class="fa fa-clipboard-list fa-3x"></i>
+                        <a href="commandes.html" class="stretched-link text-decoration-none">Bon de commande</a>
+                    </div>
+                </div>    
+                <div class="col-md-4 col-sm-4 col-4">
+                    <div class="card bg-primary align-items-center" style="background-image: url(../Images/Acceuil_img/9_tournées.png);">
+                        <i class="fa fa-map-marked-alt fa-3x"></i>
+                        <a href="tournées.html" class="stretched-link text-decoration-none">Tournées</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+  </body>
+</html>

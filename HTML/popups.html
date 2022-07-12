@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Popups</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../Custom sass/main.css">
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+  </head>
+  <body>
+      <div class="container-fluid h-100 ">
+        <div class="row justify-content-center form-group">
+          <a href="#popup1"><button>Détail produit</button></a>
+          <div id="popup1" class="overlay dark ">
+            <a class="cancel" href="#"></a>
+            <div class="popup bg-primary" style="color: white;">
+              <div class="row">
+                <div class="col-3">
+                  <img src="../maquette/10_demandeCharge.png" alt="" width="70px" height="70px">
+                </div>
+                <div class="col-8">
+                  <b style="font-size: x-large;"> Détail Produit </b><br>
+                  Nom: Farine
+                </div>
+              </div>
+              <div>Description: ....................</div>
+              <div>Colis ..</div>
+              <div>Poids ..</div>
+              <div>Prix  Gros .....DZD</div>
+              <div>      Détail ...DZD</div>
+              <div>volume ..</div>
+              <div>Quantité ..</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center form-group">
+          <a href="#popup2"><button>Bon de livraison_i</button></a>
+          <div id="popup2" class="overlay dark ">
+            <a class="cancel" href="#"></a>
+            <div class="popup bg-primary" style="color: white;">
+              <div>Solde:         0000 DZD</div>
+              <div>Total:         0000 DZD</div>
+              <div>Payement:      0000 DZD</div>
+              <div class="form-group">Reste à payer: 0000DZD</div>
+              <div class="row justify-content-center">
+                <a href="#" class="mr-2"><button>Valider</button></a>
+                <a href="#" class="mr-2"><button>Payement total</button></a>
+                <a href="#"><button>à crédit</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center form-group">
+          <a href="#popup3"><button>Abondonner les changements</button></a>
+          <div id="popup3" class="overlay dark ">
+            <a class="cancel" href="#"></a>
+            <div class="popup bg-primary" style="color: white;">
+              <div class="form-group">Abondonner les modifications ?</div>
+              <div class="row justify-content-center">
+                <a href="#" class="mr-5"><button>Oui</button></a>
+                <a href="#" ><button>Non</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center form-group">
+          <i class="fa fa-camera-alt"></i>
+        </div>
+
+        <div class="row justify-content-center">
+          <a href="#popup4"><button>Causes de non achat</button></a>
+          <div id="popup4" class="overlay dark ">
+            <a class="cancel" href="#"></a>
+            <div class="popup bg-primary" style="color: white;">
+              <div class="row">
+                <div class="col-9">
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Stock disponible</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Acheteur absent</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Magasin fermé</label>
+                  </div>
+                  <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Autre</label>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <i class="fa fa-camera-alt" style="color: white;"></i>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <input type="text" width="90%">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+</html>
